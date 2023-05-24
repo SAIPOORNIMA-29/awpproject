@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <style>
+    * {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #fff;
+  color: hsl(0, 0%, 100%);
+  height: 100vh;
+  line-height: 1.6;
+  overflow: hidden;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  /* CSS Smooth Scroll */
+  overflow-y: scroll; 
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+}
+
+.lead {
+  font-size: 1.5rem;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  display: flex;
+  width: 100%;
+  height: 60px;
+  background: rgba(0, 0, 0, 0.399);
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+  width: 100%;
+  justify-content: center;
+}
+
+.navbar ul li {
+  margin: 0 1rem;
+  padding: 1rem;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #f4f4f4;
+}
+
+.navbar ul li a:hover {
+  color: skyblue;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  height: 100vh;
+  color:white;
+ 
+  /* Scroll Snap */
+  scroll-snap-align: center;
+}
+
+section h1 {
+  font-size: 4rem;
+}
+
+/* Section Images */
+section#home {
+  background: url('https://d1whtlypfis84e.cloudfront.net/guides/wp-content/uploads/2019/09/06115852/newsaper-768x512.jpeg ') no-repeat center center/cover;;
+}
+
+section#aboutus {
+  background: url('https://www.trackplus.com/blog/wp-content/uploads/2021/08/pexels-alexander-suhorucov-6457480.jpg ') no-repeat center center/cover;;
+}
+
+section#service {
+  background: url('https://st2.depositphotos.com/7595566/10468/i/950/depositphotos_104684378-stock-photo-working-place-with-laptop-mouse.jpg') no-repeat center center/cover;;
+}
+
+section#contact {
+  background: url('https://burst.shopifycdn.com/photos/contact-us-image.jpg?width=925&format=pjpg&exif=1&iptc=1') no-repeat center center/cover;;
+}
+
+  </style>
+</head>
+<body>
+<div class="container">
+  <nav class="navbar">
+      <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#aboutus">About Us</a></li>
+          <li><a href="#service">Service</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="home2.html">NEXT</a></li>
+        </ul>
+      </nav>
+  <section id="home">
+    <hr>
+    <h1> WELCOME TO ONLINE NEWSPAPERS AND INNOVATIVE MAGAZINES
+      
+   </h1>
+  
+    <hr>
+    <p class="lead"></p>
+  </section>
+  <section id="aboutus">
+      <h1>About Us</h1>
+      <p class="lead"><mark>We delivered Newspaper from past 3 years.<br> Check Feedback for your confirmation and conect with us.</p>
+  </section>
+  <section id="service">
+      <h1>Service</h1>
+      <p class="lead"><mark>Our services are Delivering Newspapers and Magzines.<br>Customers happines is our aim</mark></p>
+  </section>
+  <section id="contact">
+      <h1>Contact</h1>
+      <p class="lead"><mark>For any queries Please fill the contact us form and we defnitely respond for your issues.</mark></p>
+  </section>
+</div>
+
+</body>
+</html>
